@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt 
+import random
+vetor=[]
+
+for i in range(100):
+  num_aleatorio=random.randint(0,50)
+  vetor.append(num_aleatorio)
+
+titulo= 'Crescimento da População Brasileira 1980-2016'
+eixox='Ano'
+eixoy='População'
+
+plt.title(titulo)
+plt.xlabel(eixox)
+plt.ylabel(eixoy)
+plt.boxplot(vetor)
+
+
+plt.show()

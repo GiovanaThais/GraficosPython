@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt 
+dados=open("original.csv").readlines()
+x=[1980,1985,1990,1995,2000,2005,2010,2015] 
+y=[0.25,0.50,0.75,1,1.25,1.50,1.75,2]
+
+
+titulo= 'Crescimento da População Brasileira 1980-2016'
+eixox='Ano'
+eixoy='População'
+
+plt.title(titulo)
+plt.xlabel(eixox)
+plt.ylabel(eixoy)
+plt.scatter(x,y, label="Meus pontos", color='r',marker='d')
+plt.plot(x,y, color='k',linestyle='--')
+plt.legend()
+plt.savefig("Figura1.png")
+plt.show()

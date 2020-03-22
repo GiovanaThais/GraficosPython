@@ -1,0 +1,19 @@
+mport pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_excel('investimento_gps_total_nivel.xlsx')
+
+cs = df.loc[6:21]
+
+
+plt.hist(cs['Estimativa do Percentual do Investimento Público Total em Educação em Relação ao Gasto Público Social (GPS), por Nível de Ensino - Brasil 2000-2015'])
+plt.show()
+
+plt.boxplot(cs['Estimativa do Percentual do Investimento Público Total em Educação em Relação ao Gasto Público Social (GPS), por Nível de Ensino - Brasil 2000-2015'])
+plt.show()
+
+plt.plot(cs['Estimativa do Percentual do Investimento Público Total em Educação em Relação ao Gasto Público Social (GPS), por Nível de Ensino - Brasil 2000-2015'])
+plt.show()
+
+plt.scatter(cs['Estimativa do Percentual do Investimento Público Total em Educação em Relação ao Gasto Público Social (GPS), por Nível de Ensino - Brasil 2000-2015'], cs['Unnamed: 1'])
+plt.show()
